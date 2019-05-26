@@ -1,1 +1,1 @@
-# CS591-MEAN-APP-Summer2019
+# Philosophy101
