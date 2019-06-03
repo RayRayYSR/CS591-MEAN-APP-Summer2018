@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    p The string is #{string}
+    - if (typeof(content) !== 'undefined')
+        p The length of string is #{content}
+
+
+
