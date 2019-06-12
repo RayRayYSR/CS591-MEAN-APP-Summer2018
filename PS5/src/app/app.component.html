@@ -1,0 +1,23 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+  {{ title }}
+  </h1>
+</div>
+
+<div>
+
+  <ul>
+  <li *ngFor="let info of data">
+    id is {{info._id}}<br>
+    title is {{info.title}}<br>
+    description is {{info.description}}<br>
+    director is {{info.director}}<br>
+    producer is {{info.producer}}<br>
+    released date is {{info.release_date}}<br>
+    Rating is {{info.rt_score}}<br>
+  </li>
+  </ul>
+
+</div>
+
