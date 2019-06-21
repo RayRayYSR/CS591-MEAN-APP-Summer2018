@@ -3,6 +3,8 @@ const express = require('express');
 const request = require('request');
 const router = express.Router();
 
+
+
 //new version with promise on 6/5/19
 const doReq= function(){
     return new Promise(function (resolve,reject) {

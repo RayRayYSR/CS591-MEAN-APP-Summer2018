@@ -8,10 +8,9 @@
 <div>
 
   <ul>
-    <form name="form1" style="text-align:center;" action="http://localhost:3000/ps4" method="get">
-      <span>Input "name,MadTree Brewing" without quotation mark to acquire Madtree Brewing's type, name and street info from backend</span><br>
-      <strong>Watch out, Capitals and No spaces!</strong><br>
-    <input type="text" name="beer"><input (click)="displayData()" type="submit" value="Submit">
+    <form name="form1" style="text-align:center;" action="http://localhost:3000/ps4" method="post">
+      <span>Input "name" or "type" or "street" without quotation mark to acquire Madtree Brewing's name or type or street</span><br>
+      <input type="text" name="beer"><input (click)="displayData()" type="submit" value="Submit">
     </form>
     <p id="data_place" style="text-align:center;"></p>
 

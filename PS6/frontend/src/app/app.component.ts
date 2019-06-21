@@ -22,11 +22,12 @@ export class AppComponent {
 
 
   displayData() {
-    if (document.forms["form1"]["beer"].value==this.contacts[0]) {
-      document.getElementById('data_place').innerHTML = this.contacts
-    }
-    else{
-      alert("Please input correct value!")
+    for (var i = 0; i < this.contacts.length; i++) {
+      //console.log(this.contacts.length);
+      if (document.forms["form1"]["beer"].value==this.contacts[i][0]) {
+        document.getElementById('data_place').innerHTML = this.contacts[i][1];
+        break;
+      }
     }
   }
 
