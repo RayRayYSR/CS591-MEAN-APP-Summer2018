@@ -75,8 +75,8 @@ router.get('/', (req, res, next) => {
           const json_data = {name:name, type:type, street:street};
           const result = [];
           //second API call
-          doReq2().then(function (body) {
-              const type2 = JSON.parse(body).brewery_type;
+          doReq2().then(function (name) {
+              const type2 = JSON.parse(name).brewery_type;
               res.json(type2);
           })
           //put into array so that they can be displayed on frontend
